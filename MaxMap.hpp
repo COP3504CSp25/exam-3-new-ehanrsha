@@ -28,12 +28,11 @@ std::map<std::string, float> returnMaxMap(const std::map<std::string, std::vecto
     
     std::map<std::string, float> reValue;
 
-    std::map<std::string, std::vector<float>>::iterator iter = in_map.begin();
+    std::map<std::string, std::vector<float>>::const_iterator iter = in_map.begin();
 
     //make iterator to loop through previous map
     for (;iter != in_map.end(); iter++){
-
+        reValue.emplace(iter->first, consultMax(iter->first, in_map));
     }
-
 
 }
