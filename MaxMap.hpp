@@ -35,4 +35,6 @@ std::map<std::string, float> returnMaxMap(const std::map<std::string, std::vecto
         reValue.emplace(iter->first, consultMax(iter->first, in_map));
     }
 
+    return reValue;
+
 }
