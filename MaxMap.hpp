@@ -12,7 +12,7 @@ float consultMax(const std::string& search_term, const std::map<std::string, std
 
     else {
         std::vector<float> vData = data.at(search_term);
-        float max = 0;
+        float max = -100;
         for (float item : vData){
             if (item > max){
                 max = item;
