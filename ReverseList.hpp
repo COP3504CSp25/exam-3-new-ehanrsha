@@ -28,7 +28,7 @@ public:
         }
 
         Node* currentNode = head;
-        while (currentNode->next != nullptr){
+        while (currentNode != nullptr){
             rev.addHead(currentNode->data);
             currentNode = currentNode->next;
         }
