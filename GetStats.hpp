@@ -41,6 +41,8 @@ public:
             }
             mean += currentNode->data;
             count++;
+
+            currentNode = currentNode->next;
         }
 
         mean = mean / count ;
